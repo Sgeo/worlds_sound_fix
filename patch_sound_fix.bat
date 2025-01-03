@@ -1,0 +1,1 @@
+setdll.exe /d:sound_fix.dll gamma.dll
