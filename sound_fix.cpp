@@ -16,6 +16,7 @@ BOOL (STDMETHODCALLTYPE *RealPlaySoundA)(
 BOOL MinePlaySoundA(LPCSTR pszSound, HMODULE hmod, DWORD fdwSound) {
     if(fdwSound & SND_PURGE) {
         fdwSound &= ~SND_PURGE;
+        fdwSound |= SND_ASYNC;
         return RealPlaySoundA(NULL, NULL, fdwSound);
     } else {
         return RealPlaySoundA(pszSound, hmod, fdwSound);
