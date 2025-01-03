@@ -12,6 +12,7 @@
   25aug1998  dl               added peek
   10dec1998  dl               added isEmpty
   10oct1999  dl               lock on node object to ensure visibility
+  03jan2025  sgeo             don't feel like bringing in the whole package, so removing Channel interface
 */
 
 package EDU.oswego.cs.dl.util.concurrent;
@@ -28,7 +29,7 @@ package EDU.oswego.cs.dl.util.concurrent;
  * <p>[<a href="http://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/concurrent/intro.html"> Introduction to this package. </a>]
  **/
 
-public class LinkedQueue implements Channel {
+public class LinkedQueue {
 
 
   /** 
