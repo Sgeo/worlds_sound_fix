@@ -1,0 +1,1 @@
+cl D:\detours-4.0.1\lib.X86\detours.lib winmm.lib sound_fix.cpp /LD /I D:\detours-4.0.1\include /link /export:DetourFinishHelperProcess,@1,NONAME
