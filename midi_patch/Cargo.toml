@@ -7,3 +7,6 @@ edition = "2021"
 
 [dependencies]
 memchr = "2.7.4"
+
+[build-dependencies]
+embed-manifest = "1.4.0"

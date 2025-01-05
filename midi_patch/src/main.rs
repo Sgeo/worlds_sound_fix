@@ -7,7 +7,8 @@ const GOOD_SLEEP: &'static [u8] = &[0x6A, 0x00, 0xFF, 0x15];
 
 fn main() {
     let windir = std::env::var("SystemRoot").expect("Unable to find SystemRoot (Windows) directory!");
-    let mciseq_path: PathBuf = [&windir, "syswow64", "mciseq.dll"].iter().collect();
+    // C:\Windows\System32 gets redirected to C:\Windows\SysWOW64 for 32-bit programs running on 64-bit Windows
+    let mciseq_path: PathBuf = [&windir, "system32", "mciseq.dll"].iter().collect();
     let mut mciseq_data = std::fs::read(mciseq_path).expect("Unable to open system mciseq.dll!");
     let mut found = 0;
     let mut position = 0;
