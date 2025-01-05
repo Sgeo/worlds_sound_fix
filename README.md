@@ -6,7 +6,7 @@ Notably: Lengthy pauses in moving between rooms with sounds.
 
 ## How to use
 
-1. Using the [latest release](releases/latest), copy the files to whereever `gamma.dll` is located.
+1. Using the [latest release](https://github.com/Sgeo/worlds_sound_fix/releases/latest), copy the files to whereever `gamma.dll` is located.
 1. Run `patch_sound_fix.bat`
 1. (64-bit Windows only) Run `midi_patch.exe`. Check that there is now an `mciseq.dll` in that directory.
 
