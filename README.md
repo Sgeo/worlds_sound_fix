@@ -18,6 +18,7 @@ Notably: Lengthy pauses in moving between rooms with sounds.
 1. I didn't make a 32-bit version of `midi_patch.exe`
 1. `Sleep(0)` might not work properly on Windows XP
 1. Future versions of `mciseq.dll` could look drastically different, and the code might not correctly find the place to patch. This patcher is not robust, though it checks to see if there's exactly one location to patch.
+1. It's possible some anti-cheat code somewhere in existence thinks that some of this stuff is suspicous.
 
 ## Uninstalling
 
